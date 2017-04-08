@@ -20,6 +20,7 @@ if(!$thisclient || !$_GET['auth'] || !$ost->validateLinkToken($_GET['auth']))
    @header('Location: index.php');
 
 $thisclient->logOut();
-header('Location: index.php');
-require('index.php');
+//header('Location: index.php');
+//require('index.php');
+header("Location: /sso/logout.php");
 ?>

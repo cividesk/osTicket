@@ -11,3 +11,6 @@ stage
 
 # Ignore packaged plugins and language packs
 *.phar
+
+# Code editors
+/.idea

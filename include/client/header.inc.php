@@ -52,7 +52,7 @@ header("Content-Type: text/html; charset=UTF-8\r\n");
                 <a href="<?php echo ROOT_PATH; ?>tickets.php">Tickets <b>(<?php echo $thisclient->getNumTickets(); ?>)</b></a> -
                 <?php
                 } ?>
-                <a href="<?php echo ROOT_PATH; ?>logout.php?auth=<?php echo $ost->getLinkToken(); ?>">Log Out</a>
+                <a href="/cividesk/apps">Desk</a>
              <?php
              }elseif($nav){ ?>
                  Guest User | <a href="<?php echo ROOT_PATH; ?>login.php">Log In</a>

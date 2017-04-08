@@ -14,5 +14,9 @@
     vim: expandtab sw=4 ts=4 sts=4:
 **********************************************************************/
 //Nothing for now...simply redirect to tickets page.
-require('tickets.php');
+require('login2.php');
+//require('tickets.php');
+if ( ! empty($_SESSION['_staff']['userID']) ) {
+  require('tickets.php');
+}
 ?>

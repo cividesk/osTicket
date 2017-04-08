@@ -13,6 +13,7 @@
 
     vim: expandtab sw=4 ts=4 sts=4:
 **********************************************************************/
+require_once '../login2.php';
 require('kb.inc.php');
 require_once(INCLUDE_DIR.'class.faq.php');
 

@@ -13,6 +13,8 @@
 
     vim: expandtab sw=4 ts=4 sts=4:
 **********************************************************************/
+header('Location: index.php');
+exit;
 require_once('../main.inc.php');
 if(!defined('INCLUDE_DIR')) die('Fatal Error. Kwaheri!');
 
