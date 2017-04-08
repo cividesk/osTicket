@@ -1528,3 +1528,79 @@ div.patch {
 .patch-title {
     color: #555;
 }
+
+#logo {
+    float: left;
+    margin: 30px 10px 10px;
+}
+
+#site-description {
+    font-size: x-small;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 10px;
+}
+
+#top-header a{
+    color: #00008b;
+}
+
+#top-header {
+    float: right;
+    margin-top: 10px;
+    width: 500px;
+}
+#main-menu {
+    background: #0070c0 none repeat scroll 0 0;
+    border-radius: 6px;
+    min-height: 41px;
+    display: block;
+}
+
+#footer-container {
+    background: #e6e6e6 none repeat scroll 0 0;
+    border-top: 10px solid #ffc000;
+    color: #404040;
+}
+#footer-content {
+    border-bottom: 1px solid #808080;
+    height: 190px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#footer-last {
+    background: #e6e6e6 none repeat scroll 0 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: #404040;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+}
+
+#top-content {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0 !important;
+    border: 0 none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-family: Cantarell,"Droid Sans",Verdana,sans-serif;
+}
+
+#kn-base {
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 395px;
+    margin-top: 2px;
+    font-family: Cantarell,"Droid Sans",Verdana,sans-serif;
+    text-align: center;
+    text-shadow: 1px 1px 1px #222222;
+    width: 155px;
+}
+
+#top-logo {
+  float: left;
+  margin: 30px 10px 10px;
+}
+

@@ -145,7 +145,7 @@ class Mailer {
             }
         }
 
-        $mime = new Mail_mime();
+        $mime = new Mail_mime("\n");
 
         // If the message is not explicitly declared to be a text message,
         // then assume that it needs html processing to create a valid text
@@ -196,8 +196,8 @@ class Mailer {
         //Desired encodings...
         $encodings=array(
                 'head_encoding' => 'quoted-printable',
-                'text_encoding' => 'base64',
-                'html_encoding' => 'base64',
+                'text_encoding' => '7bit',             //'base64',
+                'html_encoding' => 'quoted-printable', //'base64',
                 'html_charset'  => 'utf-8',
                 'text_charset'  => 'utf-8',
                 'head_charset'  => 'utf-8'

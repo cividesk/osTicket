@@ -14,6 +14,9 @@
     vim: expandtab sw=4 ts=4 sts=4:
 **********************************************************************/
 require('client.inc.php');
+
+require('login2.php');
+
 $section = 'home';
 require(CLIENTINC_DIR.'header.inc.php');
 ?>

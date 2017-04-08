@@ -22,6 +22,7 @@ if(!$_GET['auth'] || !$ost->validateLinkToken($_GET['auth']))
 $_SESSION['_client']=array();
 session_unset();
 session_destroy();
-header('Location: index.php');
-require('index.php');
+//header('Location: index.php');
+//require('index.php');
+header("Location: /sso/logout.php");
 ?>

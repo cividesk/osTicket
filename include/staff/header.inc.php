@@ -58,7 +58,7 @@
             | <a href="index.php">Staff Panel</a>
             <?php } ?>
             | <a href="profile.php">My Preferences</a>
-            | <a href="logout.php?auth=<?php echo $ost->getLinkToken(); ?>">Log Out</a>
+            | <a href="/index.php">Desk</a>
         </p>
     </div>
     <ul id="nav">

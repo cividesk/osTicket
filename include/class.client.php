@@ -89,6 +89,14 @@ class Client {
     }
 
     function getId() {
+        if ( $_SESSION['_client']['auto_login'] ) {         
+            $user = User::lookup($_SESSION['_client']['user_id']);
+            $this->user_id    = $_SESSION['_client']['user_id'];
+            $this->fullname   = $user->getFullName();
+            $this->username   =  $_SESSION['_client']['userID'];
+            $this->email      =  $_SESSION['_client']['userID'];
+            return 1;
+        }
         return $this->id;
     }
 

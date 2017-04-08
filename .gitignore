@@ -8,3 +8,4 @@ Vagrantfile
 
 # Staging directory used for packaging script
 stage
+/.idea
