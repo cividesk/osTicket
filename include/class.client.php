@@ -183,6 +183,14 @@ class  EndUser extends AuthenticatedUser {
     }
 
     function getId() {
+		if ( $_SESSION['_client']['auto_login'] ) {         
+            $user = User::lookup($_SESSION['_client']['user_id']);
+            $this->user_id    = $_SESSION['_client']['user_id'];
+            $this->fullname   = $user->getFullName();
+            $this->username   = $_SESSION['_client']['userID'];
+            $this->email      = $_SESSION['_client']['userID'];
+            return 1;
+        }
         //We ONLY care about user ID at the ticket level
         if ($this->user instanceof Collaborator)
             return $this->user->getUserId();
